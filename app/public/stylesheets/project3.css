@@ -11,7 +11,10 @@ html {
 }
 
 h1,h4 {
-	font-family: 'Permanent Marker', cursive;
+	font-family: 'Fredericka the Great', cursive;
+	/*font-family: 'Sigmar One', sans-serif;
+	font-family: 'Miltonian Tattoo', cursive;
+	font-family: 'Permanent Marker', cursive;*/
 	color: black;
 }
 
