@@ -10,34 +10,46 @@ html {
 	height: 100%;
 }
 
-h1,h4 {
-	font-family: 'Fredericka the Great', cursive;
+h1,h4 {	
 	/*font-family: 'Sigmar One', sans-serif;
 	font-family: 'Miltonian Tattoo', cursive;
 	font-family: 'Permanent Marker', cursive;*/
-	color: black;
+	color: white;
 }
 
-/*
 #links {
-	margin-left: auto;
-	margin-right: auto;
-	width: 200px;
+	padding-left:10px;
 }
-*/
 
 body {
-	background-color: #3f3f3f;
+	background-color: #d2691e; /*color that shows as sidebars*/
   	height: 100%;
   	/*font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;*/
 }
 
 .container {
-	background-color: white;
-	border-right, border-left: 3px solid black;
+	background-color: #e8b48e; /*color that shows in central portion*/
+	border-right: 2px solid black;
+	border-left: 2px solid black;
 }
 
 #main {
 	min-height: 100%;
-	padding: 20px;
+	padding-top: 20px; /*other padding elements in title_div*/
+}
+
+#title_div {
+	font-family: 'Fredericka the Great', cursive;
+	color: white;
+	background-color: black;
+	position:relative;
+	top: 0px;
+	left: 0px;
+	width: 600px;
+	padding:10px;
+	-webkit-border-radius: 0px 15px 15px 0px;
+}
+
+#footer_div {
+
 }
