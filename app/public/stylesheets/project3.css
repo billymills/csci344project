@@ -10,7 +10,12 @@ html {
 	height: 100%;
 }
 
-h1,h4 {	
+h1 {
+	font-size: 50px; /*font size for buncombe brews*/
+	color: white;
+}
+
+h2,h3,h4 {	
 	/*font-family: 'Sigmar One', sans-serif;
 	font-family: 'Miltonian Tattoo', cursive;
 	font-family: 'Permanent Marker', cursive;*/
@@ -19,6 +24,8 @@ h1,h4 {
 
 #links {
 	padding-left:10px;
+	padding-bottom:50px;
+	min-height: 100%;
 }
 
 body {
@@ -36,6 +43,8 @@ body {
 #main {
 	min-height: 100%;
 	padding-top: 20px; /*other padding elements in title_div*/
+	padding-bottom: 20px;
+	position:relative; /*positioning necessary for absolute positioning of children*/
 }
 
 #title_div {
@@ -51,5 +60,14 @@ body {
 }
 
 #footer_div {
-
+	font-family: 'Fredericka the Great', cursive;	
+	color: white;
+	background-color: black;
+	position:absolute; /*absolute with respect to parent div*/
+	height:30px;
+	bottom: 60px; /*keeps div in page*/
+	right: 0px;
+	width: 600px;
+	padding:10px;
+	-webkit-border-radius: 15px 0px 0px 15px;
 }
