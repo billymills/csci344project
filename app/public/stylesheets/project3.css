@@ -11,8 +11,9 @@ html {
 }
 
 h1 {
-	font-size: 50px; /*font size for buncombe brews*/
+	font-size: 100px; /*font size for buncombe brews*/
 	color: white;
+	line-height: 100px;
 }
 
 h2,h3,h4 {	
@@ -48,16 +49,59 @@ body {
 }
 
 #title_div {
+
 	font-family: 'Fredericka the Great', cursive;
 	color: white;
 	background-color: black;
 	position:relative;
 	top: 0px;
 	left: 0px;
-	width: 600px;
+	height: 110px;
+	width: 500px;
 	padding:10px;
-	-webkit-border-radius: 0px 15px 15px 0px;
+	-webkit-border-radius: 0px 0px 0px 0px;
 }
+
+#title_div2 {
+	font-family: 'Fredericka the Great', cursive;
+	color: white;
+	background-color: black;
+	position:relative;
+	top: 0px;
+	left: 0px;
+	width: 300px;
+	padding:10px;
+	-webkit-border-radius: 0px 0px 0px 0px;
+}
+
+#title_div3 {
+	font-family: 'Fredericka the Great', cursive;
+	color: white;
+	background-color: black;
+	position:relative;
+	top: 0px;
+	left: 0px;
+	width: 375px;
+	padding:10px;
+	-webkit-border-radius: 0px 0px 0px 0px;
+}
+
+#title_div4 {
+	font-family: 'Fredericka the Great', cursive;
+	color: white;
+	background-color: black;
+	position:relative;
+	top: 0px;
+	left: 0px;
+	width: 325px;
+	padding:10px;
+	-webkit-border-radius: 0px 0px 0px 0px;
+}
+
+
+
+
+
 
 #footer_div {
 	font-family: 'Fredericka the Great', cursive;	
