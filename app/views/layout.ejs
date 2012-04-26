@@ -13,24 +13,26 @@
 
 	<body>
 		<div id="main" class="container">
-			<div id="title_div">
-				<h1>buncombebrews</h1>
-				<p>get the buzz on Asheville's brew scene</p>
-				<!--
-				<input type="text" class = "input-medium" placeholder="Enter a search term" id="term"/>
-    			<button id="search_button" class="btn">Go!</button><br>
-    			-->
-    		</div>
-    		
-    		<div id="image_div" class="img">
-    			<img src="/images/bb_logo.png" alt="buncombe brews" width="100" height="100" />
-    		
+			<div class="row">
+				<div id="title_div" class="span10">
+					<h1>buncombebrews</h1>
+					<p>get the buzz on Asheville's brew scene</p>
+					<!--
+					<input type="text" class = "input-medium" placeholder="Enter a search term" id="term"/>
+    				<button id="search_button" class="btn">Go!</button><br>
+    				-->
+    			</div>
+    			<div class="span2 offset1">
+    				<div id="image_div" class="img">
+    					<img src="/images/bb_logo.png" alt="buncombe brews"/>
+    				</div>
+    			</div>
     		</div>
     		
     		<br>
     		<br>
     		<div id="links">
-			<%- body %> <!-- view goes here -->	
+				<%- body %> <!-- view goes here -->	
 			</div>
 			<div id="footer_div">
 				<p>links go here eventually</p>

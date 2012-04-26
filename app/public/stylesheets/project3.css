@@ -73,6 +73,11 @@ body {
 }
 
 img {
-	height:auto;
-	width:auto;
+	vertical-align:middle;
+	height:100%;
+	/*width:auto;*/
+}
+
+#image_div {
+	height:150px;
 }
