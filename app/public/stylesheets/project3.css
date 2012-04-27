@@ -10,6 +10,13 @@ html {
 	height: 100%;
 }
 
+/*stuff for title_div4 in in p*/
+p {
+	font-size: 25px;
+	color: white;
+	line-height: 80px;
+}
+
 h1 {
 	font-size: 75px; /*font size for buncombe brews*/
 	color: white;
@@ -52,7 +59,7 @@ body {
 
 #main {
 	min-height: 100%;
-	padding-top: 30px; /*other padding elements in title_div*/
+	padding-top: 50px; /*other padding elements in title_div*/
 	padding-bottom: 20px;
 	position:relative; /*positioning necessary for absolute positioning of children*/
 }
@@ -65,9 +72,11 @@ body {
 	top: 0px;
 	left: -50px;
 	height: 80px;
-	width: 500px;
-	padding:10px;
-	-webkit-border-radius: 0px 0px 0px 0px;
+	width: 465px;
+	padding-left:20px;
+	padding-top:10px;
+	padding-bottom:10px;
+	-webkit-border-radius: 5px 5px 5px 5px;
 }
 
 #title_div2 {
@@ -79,8 +88,10 @@ body {
 	left: -75px;
 	height: 80px;
 	width: 300px;
-	padding:10px;
-	-webkit-border-radius: 0px 0px 0px 0px;
+	padding-left:20px;
+	padding-top:10px;
+	padding-bottom:10px;
+	-webkit-border-radius: 5px 5px 5px 5px;
 }
 
 #title_div3 {
@@ -91,9 +102,11 @@ body {
 	top: 0px;
 	left: 25px;
 	height: 80px;
-	width: 375px;
-	padding:10px;
-	-webkit-border-radius: 0px 0px 0px 0px;
+	width: 275px;
+	padding-left:20px;
+	padding-top:10px;
+	padding-bottom:10px;
+	-webkit-border-radius: 5px 5px 5px 5px;
 }
 
 #title_div4 {
@@ -104,9 +117,11 @@ body {
 	top: 0px;
 	left: -50px;
 	height: 80px;
-	width: 325px;
-	padding:10px;
-	-webkit-border-radius: 0px 0px 0px 0px;
+	width: 335px;
+	padding-left:20px;
+	padding-top:10px;
+	padding-bottom:10px;
+	-webkit-border-radius: 5px 5px 5px 5px;
 }
 
 
