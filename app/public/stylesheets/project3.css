@@ -143,6 +143,18 @@ body {
 	-webkit-border-radius: 15px 0px 0px 15px;
 }
 
+#getting_started {
+	position: absolute;
+	top:150px;
+	right:-50px;
+	height: 400px;
+	width: 450px;
+	background-color: white;
+	padding: 10px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border: 2px solid black;
+}
+
 img {
 	vertical-align:middle;
 	height:100%;
