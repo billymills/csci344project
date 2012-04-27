@@ -11,9 +11,9 @@ html {
 }
 
 h1 {
-	font-size: 100px; /*font size for buncombe brews*/
+	font-size: 75px; /*font size for buncombe brews*/
 	color: white;
-	line-height: 100px;
+	line-height: 80px;
 }
 
 h2,h3,h4 {	
@@ -30,36 +30,41 @@ h2,h3,h4 {
 }
 
 body {
-	background-image: url(/images/buncombe_brews_wallpaper_tile.jpg); 
+	/*background-image: url(/images/buncombe_brews_wallpaper_tile.jpg); 
 	background-repeat: repeat-x;
-	/*background-color: #d2691e; /*color that shows as sidebars*/
+	background-color: #d2691e; /*color that shows as sidebars
 	background-color: #eea100; /*color that shows as sidebars*/
+	background-color: white;
   	height: 100%;
   	/*font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;*/
 }
 
 .container {
-	background-color: #e8b48e; /*color that shows in central portion*/
+	background-image: url(/images/buncombe_brews_wallpaper_tile.jpg); 
+	background-repeat: repeat-x;
+	background-color: #eea100; /*color that shows as sidebars*/
+	/*background-color: #e8b48e; color that shows in central portion*/
+	/*background-color: white;*/
 	border-right: 2px solid black;
 	border-left: 2px solid black;
+	
 }
 
 #main {
 	min-height: 100%;
-	padding-top: 20px; /*other padding elements in title_div*/
+	padding-top: 30px; /*other padding elements in title_div*/
 	padding-bottom: 20px;
 	position:relative; /*positioning necessary for absolute positioning of children*/
 }
 
 #title_div {
-
 	font-family: 'Fredericka the Great', cursive;
 	color: white;
 	background-color: black;
 	position:relative;
 	top: 0px;
-	left: 0px;
-	height: 110px;
+	left: -50px;
+	height: 80px;
 	width: 500px;
 	padding:10px;
 	-webkit-border-radius: 0px 0px 0px 0px;
@@ -71,7 +76,8 @@ body {
 	background-color: black;
 	position:relative;
 	top: 0px;
-	left: 0px;
+	left: -75px;
+	height: 80px;
 	width: 300px;
 	padding:10px;
 	-webkit-border-radius: 0px 0px 0px 0px;
@@ -83,7 +89,8 @@ body {
 	background-color: black;
 	position:relative;
 	top: 0px;
-	left: 0px;
+	left: 25px;
+	height: 80px;
 	width: 375px;
 	padding:10px;
 	-webkit-border-radius: 0px 0px 0px 0px;
@@ -95,7 +102,8 @@ body {
 	background-color: black;
 	position:relative;
 	top: 0px;
-	left: 0px;
+	left: -50px;
+	height: 80px;
 	width: 325px;
 	padding:10px;
 	-webkit-border-radius: 0px 0px 0px 0px;
