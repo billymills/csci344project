@@ -49,7 +49,8 @@ body {
 	background-repeat: repeat-x;
 	background-color: #d2691e; /*color that shows as sidebars
 	background-color: #eea100; /*color that shows as sidebars*/
-	background-color: white;
+	/*background-color: #bcdeff;*/
+	background-color: #d4d9de;
   	height: 100%;
   	/*font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;*/
 }
