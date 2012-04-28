@@ -12,6 +12,13 @@ html {
 
 /*stuff for title_div4 in in p*/
 p {
+	color:black;
+	/*font-size: 25px;
+	color: white;
+	line-height: 80px;*/
+}
+
+#buzz {
 	font-size: 25px;
 	color: white;
 	line-height: 80px;
@@ -31,6 +38,7 @@ h2,h3,h4 {
 }
 
 #links {
+	color: black;
 	padding-left:10px;
 	padding-bottom:50px;
 	min-height: 100%;
@@ -103,7 +111,7 @@ body {
 	top: 0px;
 	left: 25px;
 	height: 80px;
-	width: 275px;
+	width: 250px;
 	padding-left:20px;
 	padding-top:10px;
 	padding-bottom:10px;
@@ -128,7 +136,11 @@ body {
 
 
 
-
+#footer_par {
+	line-height: 30px;	
+	font-size: 25px;
+	color: white;
+}
 
 #footer_div {
 	font-family: 'Slackey', cursive;	
@@ -136,18 +148,19 @@ body {
 	background-color: black;
 	position:absolute; /*absolute with respect to parent div*/
 	height:30px;
-	bottom: 60px; /*keeps div in page*/
-	right: 0px;
+	bottom: 100px; /*keeps div in page*/
+	right: 25px;
 	width: 600px;
 	padding:10px;
-	-webkit-border-radius: 15px 0px 0px 15px;
+	-webkit-border-radius: 5px 5px 5px 5px;
 }
 
 #getting_started {
+	color: black;
 	position: absolute;
 	top:150px;
 	right:-50px;
-	height: 400px;
+	height: 300px;
 	width: 450px;
 	background-color: white;
 	padding: 10px;
@@ -163,4 +176,8 @@ img {
 
 #image_div {
 	height:150px;
+}
+
+a, #link_header {
+	color: black;
 }

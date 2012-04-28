@@ -48,7 +48,7 @@ app.get('/users/:user', function(req, res) {
 });
 */
 
-app.get('/', routes.index);
+app.get('/', routes.index); //route for main page
 //app.get('/users/:user', routes.user);
 app.get('/word/:word', routes.word);
 app.get('/word/beer', beer.index);
