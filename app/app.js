@@ -11,6 +11,9 @@
 var express = require('express');
 var routes = require('./routes');
 var beer = require('./routes/word/beer');
+var pisgah = require('./routes/word/pisgah');
+var craggie = require('./routes/word/craggie');
+var wedge = require('./routes/word/wedge');
 var app = module.exports = express.createServer();
 
 var runTwitter = require('./twitter.js');
@@ -53,6 +56,9 @@ app.get('/', routes.index); //route for main page
 //app.get('/users/:user', routes.user);
 app.get('/word/:word', routes.word);
 app.get('/word/beer', beer.index);
+app.get('/word/pisgah', pisgah.index);
+app.get('/word/craggie', craggie.index);
+app.get('/word/wedge', wedge.index);
 
 app.listen(3000);
 console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);

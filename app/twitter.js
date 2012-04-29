@@ -15,12 +15,12 @@ var t = new twitter({
 
 t.stream(
     'statuses/filter',
-    { track: ['barack', 'obama']},
+    { track: ['asheville', 'beer', 'brewery', 'pisgah', 'brewing', 'craggie', 'mountain', 'wedge']},
     function(stream) {
         stream.on('data', function(tweet) {
             	
 				client.flushall;
-				if(tweet.text.match(/barack/i) && tweet.text.match(/obama/i)) {
+				if(tweet.text.match(/asheville/i) && tweet.text.match(/brewery/i)) {
                		if(tweet.entities.urls[0]) {
                  		console.log(tweet.entities.urls[0].expanded_url);
                  		client.zadd('beerLink',1, tweet.entities.urls[0].expanded_url);
@@ -28,6 +28,39 @@ t.stream(
                		if(tweet.entities.urls[0]) {
                  		console.log(tweet.entities.urls[0].url);
                  		client.zadd('beerLink',1, tweet.entities.urls[0].url);
+               		}	
+            	}
+            	
+            	if(tweet.text.match(/pisgah/i) && tweet.text.match(/brewing/i)) {
+               		if(tweet.entities.urls[0]) {
+                 		console.log(tweet.entities.urls[0].expanded_url);
+                 		client.zadd('pisgahLink',1, tweet.entities.urls[0].expanded_url);
+               		}
+               		if(tweet.entities.urls[0]) {
+                 		console.log(tweet.entities.urls[0].url);
+                 		client.zadd('pisgahLink',1, tweet.entities.urls[0].url);
+               		}	
+            	}
+            	
+            	if(tweet.text.match(/craggie/i) && tweet.text.match(/mountain/i)) {
+               		if(tweet.entities.urls[0]) {
+                 		console.log(tweet.entities.urls[0].expanded_url);
+                 		client.zadd('craggieLink',1, tweet.entities.urls[0].expanded_url);
+               		}
+               		if(tweet.entities.urls[0]) {
+                 		console.log(tweet.entities.urls[0].url);
+                 		client.zadd('craggieLink',1, tweet.entities.urls[0].url);
+               		}	
+            	}
+            	
+            	if(tweet.text.match(/wedge/i) && tweet.text.match(/brewery/i)) {
+               		if(tweet.entities.urls[0]) {
+                 		console.log(tweet.entities.urls[0].expanded_url);
+                 		client.zadd('wedgeLink',1, tweet.entities.urls[0].expanded_url);
+               		}
+               		if(tweet.entities.urls[0]) {
+                 		console.log(tweet.entities.urls[0].url);
+                 		client.zadd('wedgeLink',1, tweet.entities.urls[0].url);
                		}	
             	}
 				

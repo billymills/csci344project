@@ -10,7 +10,7 @@ var client = redis.createClient();
 
 exports.index = function(req, res) {
 	//client.zrevrange(['awesomeLink', 0, 0], function(error, linkresult) {
-	client.zrevrange('pisgahLink', 0, 4, function(error, linkResult) { // 0, -1 works
+	client.zrevrange('wedgeLink', 0, 4, function(error, linkResult) { // 0, -1 works
 		var linkArray = new Array();
 		if (error) {
 			console.log (error);
@@ -27,7 +27,7 @@ exports.index = function(req, res) {
 			} //end for		
 		} //end else if		
 
-		res.render('pisgah', {link0:linkResult[0],
+		res.render('wedge', {link0:linkResult[0],
 									link1:linkResult[1],
 									link2:linkResult[2],
 									link3:linkResult[3],
