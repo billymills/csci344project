@@ -15,12 +15,12 @@ var t = new twitter({
 
 t.stream(
     'statuses/filter',
-    { track: ['beer']},
+    { track: ['barack', 'obama']},
     function(stream) {
         stream.on('data', function(tweet) {
             	
 				client.flushall;
-				if(tweet.text.match(/beer/i)) {
+				if(tweet.text.match(/barack/i) && tweet.text.match(/obama/i)) {
                		if(tweet.entities.urls[0]) {
                  		console.log(tweet.entities.urls[0].expanded_url);
                  		client.zadd('beerLink',1, tweet.entities.urls[0].expanded_url);
