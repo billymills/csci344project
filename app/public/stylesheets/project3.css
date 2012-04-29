@@ -52,12 +52,12 @@ h2,h3,h4 {
 }
 
 body {
-	/*background-image: url(/images/buncombe_brews_wallpaper_tile.jpg); 
+	background-image: url(/images/side_bar.jpg); 
 	background-repeat: repeat-x;
-	background-color: #d2691e; /*color that shows as sidebars
-	background-color: #eea100; /*color that shows as sidebars*/
+	background-color: white;
+	/*background-color: #eea100; /*color that shows as sidebars*/
 	/*background-color: #bcdeff;*/
-	background-color: #d4d9de;
+	/*background-color: #d4d9de;*/
   	height: 100%;
   	/*font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;*/
 }
