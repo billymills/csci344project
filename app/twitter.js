@@ -20,8 +20,7 @@ t.stream(
         stream.on('data', function(tweet) {
             	
 				client.flushall;
-				
-				if(tweet.text.match(/beer/)) {
+				if(tweet.text.match(/beer/i)) {
                		if(tweet.entities.urls[0]) {
                  		console.log(tweet.entities.urls[0].expanded_url);
                  		client.zadd('beerLink',1, tweet.entities.urls[0].expanded_url);

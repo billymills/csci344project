@@ -14,6 +14,7 @@ var beer = require('./routes/word/beer');
 var app = module.exports = express.createServer();
 
 var runTwitter = require('./twitter.js');
+//var runSpotter = require('./spotter.js');
 var t = new runTwitter();
 
 // Configuration
