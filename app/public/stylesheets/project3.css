@@ -30,6 +30,13 @@ h1 {
 	line-height: 80px;
 }
 
+.view_header {
+	font-family: 'Slackey', cursive;
+	color:black;
+	font-size:20px;
+	line-height:20px;
+}
+
 h2,h3,h4 {	
 	/*font-family: 'Sigmar One', sans-serif;
 	font-family: 'Miltonian Tattoo', cursive;

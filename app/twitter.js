@@ -15,7 +15,7 @@ var t = new twitter({
 
 t.stream(
     'statuses/filter',
-    { track: ['asheville', 'beer', 'brewery', 'pisgah', 'brewing', 'craggie', 'mountain', 'wedge']},
+    { track: ['asheville', 'beer', 'brewery', 'pisgah', 'brewing', 'craggie', 'mountain', 'wedge', 'highland']},
     function(stream) {
         stream.on('data', function(tweet) {
             	
@@ -61,6 +61,17 @@ t.stream(
                		if(tweet.entities.urls[0]) {
                  		console.log(tweet.entities.urls[0].url);
                  		client.zadd('wedgeLink',1, tweet.entities.urls[0].url);
+               		}	
+            	}
+            	
+            	if(tweet.text.match(/highland/i) && tweet.text.match(/brewing/i)) {
+               		if(tweet.entities.urls[0]) {
+                 		console.log(tweet.entities.urls[0].expanded_url);
+                 		client.zadd('highlandLink',1, tweet.entities.urls[0].expanded_url);
+               		}
+               		if(tweet.entities.urls[0]) {
+                 		console.log(tweet.entities.urls[0].url);
+                 		client.zadd('highlandLink',1, tweet.entities.urls[0].url);
                		}	
             	}
 				
