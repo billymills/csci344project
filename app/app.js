@@ -17,19 +17,19 @@ var wedge = require('./routes/word/wedge');
 var highland = require('./routes/word/highland');
 var app = module.exports = express.createServer();
 
-//var cf = require('./cloudfoundry.js');
+var cf = require('./cloudfoundry.js');
 
-//var redis_port = cf.redis?cf.redis.credentials.port:6379;
-//var redis_host = cf.redis?cf.redis.credentials.host:'localhost';
-//var redis_password = cf.redis?cf.redis.credentials.password:undefined;
+var redis_port = cf.redis?cf.redis.credentials.port:6379;
+var redis_host = cf.redis?cf.redis.credentials.host:'localhost';
+var redis_password = cf.redis?cf.redis.credentials.password:undefined;
 
-//console.log(redis_port);
-//console.log(redis_host);
-//console.log(redis_password);
+console.log(redis_port);
+console.log(redis_host);
+console.log(redis_password);
 
-//if(cf.runningInTheCloud()) {
-//	client.auth(redis_password);
-//}
+if(cf.runningInTheCloud()) {
+	client.auth(redis_password);
+}
 
 
 
@@ -78,7 +78,7 @@ app.get('/word/craggie', craggie.index);
 app.get('/word/wedge', wedge.index);
 app.get('/word/highland', highland.index);
 
-//app.listen(cf.port || 3000);
+app.listen(cf.port || 3000);
 
-app.listen(3000);
+//app.listen(3000);
 console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
