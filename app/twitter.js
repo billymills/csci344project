@@ -19,7 +19,7 @@ t.stream(
     function(stream) {
         stream.on('data', function(tweet) {
             	
-				client.flushall;
+//				client.flushall;
 				if(tweet.text.match(/asheville/i) && tweet.text.match(/brewery/i)) {
                		if(tweet.entities.urls[0]) {
                  		console.log(tweet.entities.urls[0].expanded_url);
